@@ -1,0 +1,21 @@
+runtime: java
+env: flex
+runtime_config:
+  jdk: openjdk8
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+resources:
+  cpu: 4
+  memory_gb: 8
+  disk_size_gb: 16
+  volumes:
+    - name: ramdisk1
+      volume_type: tmpfs
+      size_gb: 0.5
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 4
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.6
