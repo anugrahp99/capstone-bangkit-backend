@@ -10,6 +10,7 @@ import java.util.List;
  * @author Anugrah Prasetia
  * @date 5/30/2021 4:08 AM
  */
-public interface GetUserPlantDiseasesCommand extends Command<String, List<UserPlantDiseaseResponse>> {
+public interface GetUserPlantDiseasesCommand extends 
+        Command<String, List<UserPlantDiseaseResponse>> {
 }
 
