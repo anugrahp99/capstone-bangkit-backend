@@ -8,5 +8,6 @@ import com.blibli.oss.command.Command;
  * @author Anugrah Prasetia
  * @date 5/30/2021 4:10 AM
  */
-public interface GetUserPlantCheckupByIdCommand extends Command<GetUserPlantCheckupRequest, UserPlantCheckupResponse> {
+public interface GetUserPlantCheckupByIdCommand extends 
+        Command<GetUserPlantCheckupRequest, UserPlantCheckupResponse> {
 }
